@@ -68,7 +68,7 @@ getLatest({base: 'USD'});
 
   // RT: display day.js todays date
   var today = dayjs();
-  $("#day").text(today.format("[Today is] MMM D, YYYY [- CLICK Current FX Prices:]"));
+  $("#day").text(today.format("[Today is] MMM D, YYYY"));
 
 
 // Node Email --install express, body-parser, nodemailer and multer----------------------
