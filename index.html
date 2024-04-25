@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- RDT:  Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQVLMTC95N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-XQVLMTC95N');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- RDT:  Link the DayJS library -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+        crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/gluten" rel="stylesheet">
+    <style>
+          @import url('https://fonts.cdnfonts.com/css/gluten');
+          </style>
+
+    <!-- RT: CDN Link for ZURB Foundation - CSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+<!-- **IMPORTANT** ZURB Foundation css link has to be BEFORE style.css or cannot overwrite -->
+<link rel="stylesheet" href="./assets/style.css">
+    <title>Travel Website</title>
+</head>
+<body>
+  <!-- RT:  Navigation Header from ZURB Foundation Framework -->
+  <header class="subnav-hero-section">
+    <img id="logo" src="./assets/project2Logo.jpeg"></img>
+    <ul class="subnav-hero-subnav">
+      <li><a href="#fxbook" class="is-active">Foreign Exchange Rates</a></li>
+      <li><a target="_blank" href="#reviews">Travel Blog</a></li>
+      <!-- <li><a target="_blank" href="./shop.html">GiftShop</a></li> -->
+      <!-- <li><a href="#eBook" class="is-active">eBook</a></li> -->
+      <li><a target="_blank" href="#chatBot">Travel Chatbot AI</a></li>
+      <li><a target="_blank" href="#aboutUs">About Us</a></li>
+    </ul>
+  </header>
+
+  
+  <!-- RDT:  TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          {
+            "description": "EURUSD",
+            "proName": "OANDA:EURUSD"
+          },
+          {
+            "description": "GBPUSD",
+            "proName": "FX:GBPUSD"
+          },
+          {
+            "description": "USDJPY",
+            "proName": "FX:USDJPY"
+          },
+          {
+            "description": "AUDUSD",
+      "proName": "FX:AUDUSD"
+    },
+    {
+      "description": "USDCAD",
+      "proName": "OANDA:USDCAD"
+    },
+    {
+      "description": "NZDUSD",
+      "proName": "OANDA:NZDUSD"
+    },
+    {
+      "description": "USDCHF",
+      "proName": "OANDA:USDCHF"
+    },
+    {
+      "description": "USDBRL",
+      "proName": "FX_IDC:USDBRL"
+    },
+    {
+      "description": "USDARS",
+      "proName": "FX_IDC:USDARS"
+    },
+    {
+      "description": "USDCOP",
+      "proName": "FX_IDC:USDCOP"
+    },
+    {
+      "description": "USDCLP",
+      "proName": "FX_IDC:USDCLP"
+    },
+    {
+      "description": "USDZAR",
+      "proName": "FX:USDZAR"
+    },
+    {
+      "description": "USDSAR",
+      "proName": "FX_IDC:USDSAR"
+    },
+    {
+      "description": "USDQAR",
+      "proName": "FX_IDC:USDQAR"
+    },
+    {
+      "description": "USDPHP",
+      "proName": "FX_IDC:USDPHP"
+    },
+    {
+      "description": "USDSGD",
+      "proName": "OANDA:USDSGD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "colorTheme": "light",
+  "locale": "en"
+}
+</script>
+</div>
+
+  
+  <!-- RDT:  video background image -->
+  <div id="wrapper">
+  <video autoplay muted loop id="myVideo" id="reel">
+    <source src="./assets/AdobeStock_541048086.mov" type="video/mp4">
+  </video>
+  <!-- <img class="overlay" id="cover" src="./assets/bookcoverpic5.png"/> -->
+  
+  </div>
+ 
+<br>
+
+<!-- RDT:  exchangeRatesAPI -->
+<h1>Todays Travel Exchange Rates - Top Destinations:</h1>
+<div id="EURUSD"></div>
+<div id="GBPUSD"></div>
+
+<!-- RDT:  Customer Review -->
+<h1 class="reviews" id="reviews">What our Travelers are Saying</h1>
+<div class="outerdiv">
+  <div class="innerdiv">
+    <!-- div1 -->
+    <div class="div1 eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name2">Daniel Clifford</p>
+          <p class="designation2">Trip to Spain</p>
+        </div>
+      </div>
+      <div class="review2">
+        <h4>This website helped me properly prepare for my trip to Spain, was invaluable! </h4>
+        <p>“Best Travel Website out there!!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <!-- div2 -->
+    <div class="div2 eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name">Jonathan Walters</p>
+          <p class="designation">Trip to Africa</p>
+        </div>
+      </div>
+      <div class="review">
+        <h4>A huge help in preparing for international travel!</h4>
+        <p>“Highly recommend this site for international travelers!!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <!-- div3 -->
+    <div class="div3 eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name dark">Kira Whittle</p>
+          <p class="designation dark">Trip to London</p>
+        </div>
+      </div>
+      <div class="review dark">
+        <h4>Useful, practical information to help plan for any overseas traveling!</h4>
+        <p>“Great travel website!!"</p>
+        <p>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <!-- div4 -->
+    <div class="div4 eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name dark">Jeanette Harmon</p>
+          <p class="designation dark">Trip to Mexico</p>
+        </div>
+      </div>
+      <div class="review dark">
+        <h4>Helped me lock in the best possible FX rate before my trip!</h4>
+        <p>“ This website gave me the tools i needed to lock in the best FX rate possible!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <!-- div5 -->
+    <div class="div5 eachdiv">
+      <div class="userdetails">
+        <div class="imgbox">
+          <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
+        </div>
+        <div class="detbox">
+          <p class="name">Patrick Abrams</p>
+          <p class="designation">Trip to Brazil</p>
+        </div>
+      </div>
+      <div class="review">
+        <h4>Easy to use website with a ton of useful travel information!</h4>
+        <p>“ 5 Stars!!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+
+<!-- RDT:  About Me -->
+<h1>About Us</h1>
+<p id="aboutUs">"Our mission is to make the dynamic and exciting world of Foreign Exchange Trading accessible to everyone.  We strive to create cutting edge material to teach the fundamentals of FX Trading, while providing free access and resources to augment our flagship & Nationally Recognized "FX Trading Book" guide." - Ross Tauchert, CEO & Founder</p>
+<div class="container">
+  
+</div>
+
+
+<!-- RDT Personal chatbot Bubble AI -->
+<h1 id="chatBot"></h1>
+  <!-- RDT personal chatbot AI -->
+  <iframe 
+src="https://www.chatbase.co/chatbot-iframe/iVMIDd7GwDrYOkddrchHA"
+title="Chatbot"
+width="100%"
+style="height: 100%; min-height: 550px"
+frameborder="0"
+></iframe>
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "iVMIDd7GwDrYOkddrchHA",
+  domain: "www.chatbase.co"
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="iVMIDd7GwDrYOkddrchHA"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+    <!-- Footer PLaceholder from ZURB Foundation -->
+<section class="contact-us-section">
+    <div class="row medium-unstack">
+      <div class="columns contact-us-section-left">
+  
+        <ul class="contact-us-list">
+          <li class="address">Charlotte, North Carolina</li>
+          <li class="email">support@fxtradingbook.com<a href="mailto:"></a></li>
+          <!-- <li class="phone">
+            1 (704) 574 9665 -->
+          </li>
+        </ul>
+      </div>
+      <div class="columns contact-us-section-right">
+        <h1 class="contact-us-header">Mail Us</h1>
+        <form class="contact-us-form">
+          <input type="text" placeholder="Full name">
+          <input type="email" placeholder="Email">
+          <textarea name="message" id="" rows="12" placeholder="Type your message here"></textarea>
+          <div class="contact-us-form-actions">
+            <input type="submit" class="button" value="Send it" />
+            <div>
+              <label for="FileUpload" class="button contact-us-file-button">Attach Files</label>
+              <input type="file" id="FileUpload" class="show-for-sr">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Ajax jquery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- RT: CDN Link for ZURB Foundation CSS Framework -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+  <!-- RT:  Added link to the jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Added link for javascript -->
+  <script src="./assets/script.js"></script>
+</body>
+</html>
