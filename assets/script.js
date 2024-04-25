@@ -39,8 +39,8 @@ function getLatest(options) {
         console.log(rates)
         // console.log(rates.rates)
         // console.log(rates.rates.EUR)
-            EURUSD.innerText=`${"EUR/USD " + rates.rates.EUR}`;
-            GBPUSD.innerText=`${"GBP/USD " + rates.rates.GBP}`;
+            EURUSD.innerText=`${"Europe:  EUR/USD " + rates.rates.EUR}`;
+            GBPUSD.innerText=`${"London:  GBP/USD " + rates.rates.GBP}`;
             USDCAD.innerText=`${"USD/CAD " + rates.rates.CAD}`;
             USDCHF.innerText=`${"USD/CHF " + rates.rates.CHF}`;
             USDNOK.innerText=`${"USD/NOK " + rates.rates.NOK}`;
