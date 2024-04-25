@@ -1,0 +1,17 @@
+{
+  "name": "travelwebsite",
+  "version": "1.0.0",
+  "description": "This is our Project #2 which looks to provide a comprehensive solution before one travels overseas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node": "^22.0.0",
+    "sequelize": "^6.37.3"
+  }
+}
