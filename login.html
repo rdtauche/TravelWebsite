@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- RDT:  Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQVLMTC95N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-XQVLMTC95N');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- RDT:  Link the DayJS library -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+        crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/gluten" rel="stylesheet">
+    <style>
+          @import url('https://fonts.cdnfonts.com/css/gluten');
+          </style>
+
+    <!-- RT: CDN Link for ZURB Foundation - CSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+<!-- **IMPORTANT** ZURB Foundation css link has to be BEFORE style.css or cannot overwrite -->
+<link rel="stylesheet" href="./assets/style.css">
+    <title>Travel Website</title>
+</head>
+<body>
+  <!-- RT:  Navigation Header from ZURB Foundation Framework -->
+  <header class="subnav-hero-section">
+    <img id="logo" src="./assets/project2Logo.jpeg"></img>
+    <ul class="subnav-hero-subnav">
+      <li><a href="#fxrates" class="is-active">Foreign Exchange Rates</a></li>
+      <li><a target="_blank" href="#travelBlog">Travel Blog</a></li>
+      <li><a target="_blank" href="#chatBot">Travel Chatbot AI</a></li>
+      <li><a target="_blank" href="#aboutUs">About Us</a></li>
+      <li><a target="_blank" href="#aboutUs">Sign In</a></li>
+    </ul>
+  </header>
+
+  
+  <!-- RDT:  TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          {
+            "description": "EURUSD",
+            "proName": "OANDA:EURUSD"
+          },
+          {
+            "description": "GBPUSD",
+            "proName": "FX:GBPUSD"
+          },
+          {
+            "description": "USDJPY",
+            "proName": "FX:USDJPY"
+          },
+          {
+            "description": "AUDUSD",
+      "proName": "FX:AUDUSD"
+    },
+    {
+      "description": "USDCAD",
+      "proName": "OANDA:USDCAD"
+    },
+    {
+      "description": "NZDUSD",
+      "proName": "OANDA:NZDUSD"
+    },
+    {
+      "description": "USDCHF",
+      "proName": "OANDA:USDCHF"
+    },
+    {
+      "description": "USDBRL",
+      "proName": "FX_IDC:USDBRL"
+    },
+    {
+      "description": "USDARS",
+      "proName": "FX_IDC:USDARS"
+    },
+    {
+      "description": "USDCOP",
+      "proName": "FX_IDC:USDCOP"
+    },
+    {
+      "description": "USDCLP",
+      "proName": "FX_IDC:USDCLP"
+    },
+    {
+      "description": "USDZAR",
+      "proName": "FX:USDZAR"
+    },
+    {
+      "description": "USDSAR",
+      "proName": "FX_IDC:USDSAR"
+    },
+    {
+      "description": "USDQAR",
+      "proName": "FX_IDC:USDQAR"
+    },
+    {
+      "description": "USDPHP",
+      "proName": "FX_IDC:USDPHP"
+    },
+    {
+      "description": "USDSGD",
+      "proName": "OANDA:USDSGD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "colorTheme": "light",
+  "locale": "en"
+}
+</script>
+</div>
+
+  
+  <!-- RDT:  video background image -->
+  <div id="wrapper">
+  <video autoplay muted loop id="myVideo" id="reel">
+    <source src="./assets/AdobeStock_541048086.mov" type="video/mp4">
+  </video>
+  <!-- <img class="overlay" id="cover" src="./assets/bookcoverpic5.png"/> -->
+  
+  </div>
+ 
+<br>
+
+    <!--    Start Login Section (Mark)    -->
+
+    <div class="row">
+        <div class="col-md-6">
+          <h2>Login</h2>
+      
+          <form class="form login-form">
+            <div class="form-group">
+              <label for="email-login">Email:</label>
+              <input class="form-input" type="text" id="email-login" />
+            </div>
+            <div class="form-group">
+              <label for="password-login">Password:</label>
+              <input class="form-input" type="password" id="password-login" />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2>Signup</h2>
+      
+          <form class="form signup-form">
+            <div class="form-group">
+              <label for="name-signup">Name:</label>
+              <input class="form-input" type="text" id="name-signup" />
+            </div>
+            <div class="form-group">
+              <label for="email-signup">Email:</label>
+              <input class="form-input" type="text" id="email-signup" />
+            </div>
+            <div class="form-group">
+              <label for="password-signup">Password:</label>
+              <input class="form-input" type="password" id="password-signup" />
+            </div>
+            <div class="form-group">
+                <label for="password-signup">Retype Password:</label>
+                <input class="form-input" type="password" id="password-signup" />
+              </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">Signup</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--    End Login Section (Mark)    -->
+
+
+
+
+
+
+
+  <!-- Ajax jquery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- RT: CDN Link for ZURB Foundation CSS Framework -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+  <!-- RT:  Added link to the jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Added link for javascript -->
+  <script src="./assets/script.js"></script>
+</body>
+</html>
