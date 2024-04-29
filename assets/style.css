@@ -125,8 +125,48 @@ body {
   background: rgba(0, 0, 0, 0.5);
   margin-top: 250px;
 }
+.login-benefits h2{
+  color: black;
+}
 /* ---  Login (Mark)  --- */
+.login-title{
+  padding-top: 10%;
+  text-align: center;
+  color: #fff;
+}
+.container-fluid{
+  background-color: #fff;
+}
+.col-md-3{
+  border: 3px solid white;
+  background-color: #0e1b23;  
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px -5px black;
+  
+}
+.form-input{
+  border-radius: 5px;
+  background-color: #d5d5d5;
+  margin-bottom: 10%;
 
+}
+.btn{
+  border-radius: 5px;
+  margin-bottom: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+label{
+  color: white;
+}
+::placeholder {
+  color: black;
+  opacity: .5; 
+}
+input{
+  color: black;
+}
 
 
 /* ------------------------------------- */
