@@ -34,6 +34,7 @@
 <!-- **IMPORTANT** ZURB Foundation css link has to be BEFORE style.css or cannot overwrite -->
   <link rel="stylesheet" href="./assets/style.css">
     <title>Travel Website</title>
+
 </head>
 <body>
   <!-- RT:  Navigation Header from ZURB Foundation Framework -->
@@ -131,17 +132,20 @@
 </div>
 
     <!--    Start Destination Selection (Mark)    -->
-  <div class="container">
-    <div class="row">
-      <div class="country-selector col-lg-6">
+  <div class="container-fluid">
+    <div class="row grid justify-content-center">
+      <div class="country-selector col-lg-10">
         <h2>Which Countries Are You Planning on Visiting?</h2>
-        <select multiple data-style="bg-white rounded-pill" class="selectPicker w-100">
-          <option value="">Albania</option>
-          <option value=""></option>
-        </select>
+          <div class="row">
+            <div class="d-inline-flex gap-1">
+              <button></button>
+            </div>
+          </div>
       </div>
     </div>
   </div>
+
+
 
  
     <!--    End Destination Selection (Mark)    -->
