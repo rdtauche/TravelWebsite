@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <!--  Collapse Links  -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
     <!-- RDT:  Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQVLMTC95N"></script>
     <script>
@@ -34,6 +39,8 @@
 <!-- **IMPORTANT** ZURB Foundation css link has to be BEFORE style.css or cannot overwrite -->
   <link rel="stylesheet" href="./assets/style.css">
     <title>Travel Website</title>
+
+
 
 </head>
 <body>
@@ -135,10 +142,50 @@
   <div class="container-fluid">
     <div class="row grid justify-content-center">
       <div class="country-selector col-lg-10">
-        <h2>Which Countries Are You Planning on Visiting?</h2>
-          <div class="row">
-            <div class="d-inline-flex gap-1">
-              <button></button>
+        <h2 class="country-title">Which Countries Are You Planning on Visiting?</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-2">
+              <button class="continent-btn btn btn-outline-primary btn-lg" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#multiCollapseExample2" aria-expanded="false" 
+                aria-controls="multiCollapseExample2">North America</button>
+            </div>
+            <div class="col-md-2">
+              <button class="continent-btn btn btn-outline-primary btn-lg" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#multiCollapseExample2" aria-expanded="false" 
+                aria-controls="multiCollapseExample2">South America</button>
+            </div>
+            <div class="col-md-2">
+              <button class="continent-btn btn btn-outline-primary btn-lg" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#multiCollapseExample2" aria-expanded="false" 
+                aria-controls="multiCollapseExample2">Europe</button>
+            </div>
+            <div class="col-md-2">
+              <button class="continent-btn btn btn-outline-primary btn-lg" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#multiCollapseExample2" aria-expanded="false" 
+                aria-controls="multiCollapseExample2">Africa</button>
+            </div>
+            <div class="col-md-2">
+              <button class="continent-btn btn btn-outline-primary btn-lg" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#multiCollapseExample2" aria-expanded="false" 
+                aria-controls="multiCollapseExample2">Asia/Oceania</button>
+            </div>
+              
+            
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body">
+                    Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body">
+                    Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
       </div>
