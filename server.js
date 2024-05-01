@@ -13,5 +13,5 @@ app.use(routes);
 
 // RDT:  sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening - good job Ross!'));
+  app.listen(PORT, () => console.log('Now listening - good job Team!'));
 });
