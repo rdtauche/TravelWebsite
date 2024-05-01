@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = require('./routes');
+const routes = require('./controllers/API-route');
 // RDT:  import sequelize connection
 const sequelize = require('./config/connection');
 
@@ -13,5 +13,5 @@ app.use(routes);
 
 // RDT:  sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening - good job Ross!'));
+  app.listen(PORT, () => console.log('Now listening - good job Team!'));
 });

@@ -161,32 +161,35 @@
             </form>
           </div>
   
-          <div class="col-md-3">
-            <h2 class="login-title">Register Today!</h2>
-            <form class="form signup-form p-3" action="/register" method="POST">
-              <div class="form-group">
-                <label for="name-signup">Name:</label>
-                <input class="form-input" type="text" id="name-signup" name="name" placeholder="Your Name" required/>
+          <div class="container-fluid">
+            <div class="row grid gap-5 justify-content-center">
+              <div class="col-md-3">
+                <h2 class="login-title">Register Today!</h2>
+                <form class="form signup-form p-3" action="/register" method="POST">
+                  <div class="form-group">
+                    <label for="name-signup">Name:</label>
+                    <input class="form-input" type="text" id="name-signup" name="name" placeholder="Your Name" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="email-signup">Email:</label>
+                    <input class="form-input" type="email" id="email-signup" name="email" placeholder="Email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="password-signup">Create Password:</label>
+                    <input class="form-input" type="password" id="password-signup" name="password" placeholder="Password" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password-signup">Retype Password:</label>
+                    <input class="form-input" type="password" id="confirm-password-signup" name="confirmPassword" placeholder="Retype Password" required/>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-outline-primary login-btn col-4" type="submit">Register</button>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="email-signup">Email:</label>
-                <input class="form-input" type="email" id="email-signup" name="email" placeholder="Email" required/>
-              </div>
-              <div class="form-group">
-                <label for="password-signup">Create Password:</label>
-                <input class="form-input" type="password" id="password-signup" name="password" placeholder="Password" required/>
-              </div>
-              <div class="form-group">
-                  <label for="password-signup">Retype Password:</label>
-                  <input class="form-input" type="password" id="confirm-password-signup" name="confirmPassword" placeholder="Retype Password" required/>
-                </div>
-              <div class="form-group">
-                <button class="btn btn-outline-primary login-btn col-4" type="submit">Register</button>
-              </div>
-            </form>
+            </div>
           </div>
-        </div>
-      </div>
+          
       <!--    End Login Section (Mark)    -->
 
 
