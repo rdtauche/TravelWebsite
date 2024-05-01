@@ -172,6 +172,9 @@ input{
 /* ------------End login page (Mark)-------------- */
 
 /* --- Begin Profile Page --- */
+.container-fluid{
+  height: 300px;
+}
 .country-title{
   padding: 2% 0;
 }
@@ -190,9 +193,12 @@ input{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-wrap: nowrap;
 }
 
-/* --- End Profile Pic --- */
+
+
+/* --- End Profile Page --- */
 /* About Me */
 .profilepic {
   border-radius: 50%;
