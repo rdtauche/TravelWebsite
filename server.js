@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = require('../TravelWebsite/controllers/API-route');
+const routes = require('./controllers/API-route');
 // RDT:  import sequelize connection
 const sequelize = require('./config/connection');
 
