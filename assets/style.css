@@ -138,13 +138,14 @@ body {
 }
 .container-fluid{
   background-color: #fff;
+
 }
 .col-md-3{
   border: 3px solid white;
   background-color: #0e1b23;  
   border-radius: 15px;
   box-shadow: 0px 0px 15px -5px black;
-  
+
 }
 .form-input{
   border-radius: 5px;
@@ -171,12 +172,14 @@ input{
 }
 /* ------------End login page (Mark)-------------- */
 
-/* --- Begin Profile Page --- */
-.container-fluid{
-  height: 500px;
-}
+/* --- Begin Profile Page (Mark)  --- */
+
 .country-title{
   padding: 2% 0;
+}
+
+.country-container{
+  height: 500px;
 }
 
 .country-selector{
@@ -198,7 +201,7 @@ input{
 
 
 
-/* --- End Profile Page --- */
+/* --- End Profile Page (Mark)  --- */
 /* About Me */
 .profilepic {
   border-radius: 50%;
