@@ -140,7 +140,7 @@ body {
   background-color: #fff;
 
 }
-.col-md-3{
+.login-card{
   border: 3px solid white;
   background-color: #0e1b23;  
   border-radius: 15px;
@@ -176,10 +176,11 @@ input{
 
 .country-title{
   padding: 2% 0;
+  font-size: 2em;
 }
 
 .country-container{
-  height: 500px;
+  height: 600px;
 }
 
 .country-selector{
@@ -193,11 +194,41 @@ input{
 .continent-btn{
   width: 100%;
   border-radius: 5px;
+  font-size: 1.5em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-wrap: nowrap;
+  margin-bottom: 5%;
 }
+
+.card{
+  border: 1px solid white;
+  background-color: #0e1b23; 
+  color: white; 
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px -5px black;
+}
+
+.form-check p{
+  font-size: 1.5em;
+  padding-top: 5%;
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: .25em;
+  margin-top: 11%;
+}
+
+.submit-btn{
+  border-radius: 5px;
+  margin: 15%;
+  font-size: 1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 
