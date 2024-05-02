@@ -1,10 +1,20 @@
 const express = require('express');
 const routes = require('./controllers/API-route');
+
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({});
 // RDT:  import sequelize connection
 const sequelize = require('./config/connection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+app.use(express.static(path.join(__dirname, "public")));
+app.use(require("./controllers/dish-routes"));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
