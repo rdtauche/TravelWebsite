@@ -1,27 +1,38 @@
 const express = require('express');
-const routes = require('./controllers/API-route');
-const path = require('path');
-const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
-// RDT:  import sequelize connection
-const sequelize = require('./config/connection');
-
 const app = express();
-const PORT = process.env.PORT || 3001;
-
-
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
-
-app.use(express.static(path.join(__dirname, "public")));
-app.use(require("./controllers"));
+const port = process.env.PORT || 3001;
+const { getUsers, addUser } = require('./controllers/users');
+const pool = require('./db/db');
+require('dotenv').config();
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-app.use(routes);
+app.get('/users', async (req, res) => {
+  try {
+    const users = await getUsers();
+    res.json(users);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
 
-// RDT:  sync sequelize models to the database, then turn on the server
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening - good job Team!'));
+app.post('/register', async (req, res) => {
+  const { name, email, password, confirmPassword } = req.body;
+
+  if (password !== confirmPassword) {
+    return res.status(400).json({ error: 'Passwords do not match' });
+  }
+
+  try {
+    const user = await addUser(name, email, password);
+    res.json(user);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
