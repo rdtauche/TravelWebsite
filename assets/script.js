@@ -37,8 +37,8 @@ function getLatest(options) {
 
     function displayData(rates) {
         console.log(rates)
-        // console.log(rates.rates)
-        // console.log(rates.rates.EUR)
+        console.log(rates.rates)
+        console.log(rates.rates.EUR)
             EURUSD.innerText=`${"Europe:  EUR/USD " + rates.rates.EUR}`;
             GBPUSD.innerText=`${"London:  GBP/USD " + rates.rates.GBP}`;
             USDCAD.innerText=`${"USD/CAD " + rates.rates.CAD}`;
@@ -71,29 +71,6 @@ getLatest({base: 'USD'});
   $("#day").text(today.format("[Today is] MMM D, YYYY"));
 
 
-// Node Email --install express, body-parser, nodemailer and multer----------------------
-const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-const multer = require('multer');
-const path = require('path');
-
-const app = express();
-const upload = multer({ dest: 'uploads/' }); // Configures multer to store uploaded files in the 'uploads' directory
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public'))); // Serve static files like HTML, CSS from 'public' directory
-
-// SMTP configuration for nodemailer
-const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com', // Replace with your SMTP host
-    port: 465, // Common port for SMTP
-    secure: false, // True for 465, false for other ports
-    auth: {
-        user: 'ross.tauchert@gmail.com', // Your email
-        pass: 'Bear2023!!' // Your email password
-    }
-});
 
 // Route to display the HTML form
 app.get('/', (req, res) => {
