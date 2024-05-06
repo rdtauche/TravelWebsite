@@ -5,7 +5,7 @@ document.getElementById('registration-form').addEventListener('submit', async (e
     const userData = Object.fromEntries(formData.entries());
   
     try {
-      const response = await fetch('/register', {
+      const response = await fetch('/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -15,7 +15,7 @@ document.getElementById('registration-form').addEventListener('submit', async (e
   
       if (response.ok) {
         alert('Registration successful!');
-        window.location.href = 'file:///C:/Users/cshjo/Desktop/TravelWebsite/profile.html';
+        window.location.href = '/profile';
       } else {
         const errorMessage = await response.text();
         alert(`Registration failed: ${errorMessage}`);
