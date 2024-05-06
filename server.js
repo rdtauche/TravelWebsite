@@ -55,7 +55,7 @@ async function syncDatabase() {
   }
 }
 
-app.listen(port, async () => {
+app.listen(PORT, async () => {
   console.log(`Server is running on http://localhost:${port}`);
   await syncDatabase();
 });
