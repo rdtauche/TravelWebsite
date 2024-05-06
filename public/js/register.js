@@ -1,4 +1,5 @@
 document.getElementById('registration-form').addEventListener('submit', async (event) => {
+
     event.preventDefault();
   
     const formData = new FormData(event.target);
@@ -23,6 +24,10 @@ document.getElementById('registration-form').addEventListener('submit', async (e
     } catch (error) {
       console.error('Error:', error);
       alert('An error occurred during registration.');
+
     }
-  });
-  
+  } catch (error) {
+    console.error('Error:', error);
+    alert('An error occurred during registration.');
+  }
+});
