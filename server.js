@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+
+const { User } = require('./db/models'); 
+
 const PORT = process.env.PORT || 3001;
 require('dotenv').config();
 const exphbs = require('express-handlebars');
@@ -9,6 +12,7 @@ const path = require('path');
 const sequelize = require('./config/connection');
 
 const routes = require ("./controllers");
+
 
 app.use(express.json());
 
@@ -41,6 +45,17 @@ app.use(session(sess));
 
 app.use(routes);
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+
+async function syncDatabase() {
+  try {
+    await sequelize.sync();
+    console.log('Database synchronized');
+  } catch (error) {
+    console.error('Error synchronizing database:', error);
+  }
+}
+
+app.listen(port, async () => {
+  console.log(`Server is running on http://localhost:${port}`);
+  await syncDatabase();
 });
