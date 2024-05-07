@@ -24,6 +24,9 @@ body {
 div {
   color: black;
 }
+li {
+  color: white;
+}
 
 
 .container {
@@ -705,6 +708,10 @@ h1 {
     border-bottom: 2px solid #e6e6e6;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .contact-us-header {
+    color: white;
   }
 
   /* FX Horizontal Ticker Styling */
